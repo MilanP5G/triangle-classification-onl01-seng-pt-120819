@@ -15,7 +15,7 @@ class Triangle
     else
       if (@one == @two) && (@two == @three)
         :equilateral 
-      elsif (@one && @three > @two) || (@two && @one > @three) || (@three && @two > @one)
+      elsif (@one == @three) || (@two == @one) || (@three == @two)
         :isosceles
       else 
         :scalene
